@@ -102,12 +102,12 @@ public class DeserializationIT extends BatchTestBase {
      * restarting WildFly server for more strict verification.
      * <p/>
      * The restart operation will cause internal server error, and no new restart job execution is created or
-     * executed. So the test expects {@code javax.ws.rs.InternalServerErrorException}.
+     * executed. So the test expects {@code jakarta.ws.rs.InternalServerErrorException}.
      *
      * @throws Exception
      * @see #startNotRestartable()
      */
-    @Test(expected = javax.ws.rs.WebApplicationException.class)
+    @Test(expected = jakarta.ws.rs.WebApplicationException.class)
     public void startNotRestartableRestart() throws Exception {
         final Properties params = new Properties();
         params.setProperty("fail.on", String.valueOf(-1));

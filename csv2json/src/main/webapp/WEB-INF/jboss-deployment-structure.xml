@@ -1,0 +1,16 @@
+<jboss-deployment-structure>
+    <deployment>
+        <exclusions>
+            <module name="org.jberet.jberet-core"/>
+            <module name="javax.batch.api"/>
+            <module name="jakarta.batch.api"/>
+<!--            <module name="org.jboss.weld.core"/>-->
+<!--            <module name="org.jboss.weld.spi"/>-->
+<!--            <module name="org.jboss.weld.api"/>-->
+
+
+            <!--            <module name="javax.batch" />-->
+            <!--            <module name="jakarta.batch" />-->
+        </exclusions>
+    </deployment>
+</jboss-deployment-structure>

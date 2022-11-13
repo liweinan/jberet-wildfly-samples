@@ -13,7 +13,7 @@ package org.jberet.samples.wildfly.restwriter;
 import java.net.URI;
 import java.util.Properties;
 import javax.batch.runtime.BatchStatus;
-import javax.ws.rs.client.WebTarget;
+import jakarta.ws.rs.client.WebTarget;
 
 import org.jberet.rest.client.BatchClient;
 import org.jberet.samples.wildfly.common.BatchTestBase;

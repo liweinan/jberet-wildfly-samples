@@ -15,21 +15,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.jberet</groupId>
-        <artifactId>jberet-parent</artifactId>
-        <version>3.0.0.Final</version>
-    </parent>
+<!--    <parent>-->
+<!--        <groupId>org.jberet</groupId>-->
+<!--        <artifactId>jberet-parent</artifactId>-->
+<!--        <version>3.0.0.Final</version>-->
+<!--    </parent>-->
 
     <properties>
         <version.maven.wildfly.plugin>5.0.1.Final</version.maven.wildfly.plugin>
         <version.org.jberet.schedule>3.0.0.Final</version.org.jberet.schedule>
     </properties>
-<!--    <parent>-->
-<!--        <artifactId>wildfly-jberet-samples</artifactId>-->
-<!--        <groupId>org.jberet.samples</groupId>-->
-<!--        <version>1.4.0.Alpha-SNAPSHOT</version>-->
-<!--    </parent>-->
+    <parent>
+        <artifactId>wildfly-jberet-samples</artifactId>
+        <groupId>org.jberet.samples</groupId>
+        <version>1.4.0.Alpha-SNAPSHOT</version>
+    </parent>
 
     <artifactId>scheduleTimer</artifactId>
 

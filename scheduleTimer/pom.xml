@@ -16,10 +16,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>wildfly-jberet-samples</artifactId>
-        <groupId>org.jberet.samples</groupId>
-        <version>1.4.0.Alpha-SNAPSHOT</version>
+        <groupId>org.jberet</groupId>
+        <artifactId>jberet-parent</artifactId>
+        <version>3.0.0.Final</version>
     </parent>
+
+    <properties>
+        <version.maven.wildfly.plugin>5.0.1.Final</version.maven.wildfly.plugin>
+        <version.org.jberet.schedule>3.0.0.Final</version.org.jberet.schedule>
+    </properties>
+<!--    <parent>-->
+<!--        <artifactId>wildfly-jberet-samples</artifactId>-->
+<!--        <groupId>org.jberet.samples</groupId>-->
+<!--        <version>1.4.0.Alpha-SNAPSHOT</version>-->
+<!--    </parent>-->
 
     <artifactId>scheduleTimer</artifactId>
 
@@ -29,11 +39,12 @@
         <dependency>
             <groupId>org.jberet.samples</groupId>
             <artifactId>jberet-samples-common</artifactId>
-            <version>${project.version}</version>
+            <version>1.4.0.Alpha-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.jberet</groupId>
             <artifactId>jberet-schedule-timer</artifactId>
+            <version>${version.org.jberet.schedule}</version>
         </dependency>
         <dependency>
             <groupId>jakarta.ejb</groupId>
